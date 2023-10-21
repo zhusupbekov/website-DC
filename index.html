@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="webthemez">
-    <title>Reminder for data center visitors</title>
+    <title>Памятка пользователю услугами ЦОД</title>
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -20,6 +20,25 @@
 </head> 
 
 <body id="home">
+
+    <script>
+        function initMap() {
+            var location = { lat: 50.999588, lng: 71.377575 }; // Замените YOUR_LATITUDE и YOUR_LONGITUDE на координаты вашего местоположения
+    
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 15 // Установите уровень масштабирования
+            });
+    
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'QC' // Замените на соответствующее название
+            });
+        }
+    </script>
+    
+
 
     <header id="header">
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
@@ -39,14 +58,16 @@
                         <li class="scroll active"><a href="#home">Главная</a></li> 
 						<li class="scroll"><a href="#features">Памятка</a></li>
                         <li class="scroll"><a href="#services">Правила</a></li>
-                        <li class="scroll"><a href="#about">О нас</a></li> 
-                        <li class="scroll"><a href="#pricing">Pricing</a></li>
+                        <!--<li class="scroll"><a href="#about">О нас</a></li> 
+                        <li class="scroll"><a href="#pricing">Pricing</a></li>-->
                         <li class="scroll"><a href="#our-team">Сотрудники</a></li>
                         <li class="scroll"><a href="#contact-us">Контакты</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqzyKFbd_ogrWAWr9YQ7NY5-rj7NwZC5U&callback=initMap"></script>
+
     </header><!--/header-->
 
     <section id="hero-banner">
@@ -55,8 +76,8 @@
                         <div class="row">
                             <div class="col-sm-12">
                                  
-                                    <h2>Памятка пользователю услугами<b> Data Center QazCloud</b></h2>
-                                    <p>Документы, обязательные для посещения ЦОД<br/> Общие правила установки пользовательского оборудования в ЦОД</p>
+                                    <h2>Добро пожаловать в<b> Data Center QazCloud!</b></h2>
+                                    <p>Мы стремимся обеспечить безопасность и эффективную работу для всех наших клиентов. Пожалуйста, ознакомьтесь с важными рекомендациями ниже, чтобы сделать ваше пребывание в нашем ЦОД максимально продуктивным и безопасным.</p>
                                     <a class="btn btn-primary btn-lg" href="#">Ознакомиться</a>
                                 
                             </div>
@@ -68,42 +89,22 @@
 	 <div class="container">
 	   <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Памятка для клиента ЦОД:</h2>
-                <p class="wow fadeInDown"><ul>
-                    <li>Клиент должен предоставить заполненный и подписанный Формуляр Пользователя (см. форму
-                    Формуляра и инструкцию по заполнению – в работе);</li>
-                    <li>Клиент должен получить IP-адреса от ТОО «QazCloud», направив заявку info@qazcloud.kz.</li>
-                    <li>Доставка и установка Оборудования, а также посещение ЦОД производятся в рабочие дни на основании
-                    предварительной Заявки (формы заявки для каждого ЦОД размещены в настоящей Памятке),
-                    направленной по электронной почте на info@qazcloud.kz или e-mail инженерной службы
-                    соответствующего ЦОД ТОО «QazCloud».</li>
-                    <li>Проведение работ с оборудованием (настройка, замена комплектующих и т.п.) производится в отдельном
-                    помещении, предназначенном для этих целей.</li>
-                    <li>Сотрудники Пользователя, которые будут работать с оборудованием, должны иметь действующее
-                    удостоверение о проверке знаний норм и правил работы в электроустановках 2 (второй) категории (до
-                    1000 Вольт) или выше.</li>
-                    <li>Устанавливаемое оборудование должно быть сертифицированным для использования в сетях связи РК.
-                    Пользователь обязан предоставить Оператору копию сертификатов на каждую единицу оборудования.
-                    Оборудование должно быть предназначено для установки в стойку, иметь все кабели питания и
-                    крепежные элементы. Оборудование принимается без транспортной упаковки.</li>
+                <p class="wow fadeInDown">
+                    <b>Порядок авторизации сотрудников Заказчика для организации списка уполномоченных лиц для  постоянного доступа в ЦОД на время действия договора Заказчика:</b>
+                    <ul>
+                    <li>Для организации доступа в ЦОД г. Косшы, необходимо направить официальным письмом список уполномоченных сотрудников, имеющих право постоянного доступа в ЦОД на все время действия договора на оказание услуг.</li>
+                    <li>В случае изменения списка уполномоченных лиц, обладающих правом постоянного доступа, необходимо отправить скан обновленного списка посредством электронной почты ответственным сотрудникам ЦОД.</li>
+
                 </ul></p>
             </div>
 	 <div class="row FeatLayout">
 <div class="col-md-5 Featimg"> <img src="images/features_img.png" alt="feature" class="img-responsive center-block"></div>
 <div class="col-md-7">
-<h2>Документы, обязательные для посещения ЦОД:</h2>
-<p><ol><li> Формуляр клиента ─ для связи сотрудников ЦОД с представителями Клиента, для решения
-    организационных и технических вопросов, определения способов связи и методов аутентификации,
-    для регламентирования доступа представителей Клиента к работе с оборудованием. Формуляр клиента
-    является одновременно Доверенностью на представителей Клиента по работе с оборудованием на
-    площадке ЦОД.</li>
-    <li> Документ, удостоверяющий личность (Удостоверение личности, Паспорт, военный билет и т.п.).</li>
-    <li> Акты приема-передачи и/или Акты возврата оборудования заполненные Клиентом (с подписью и
-    печатью) ─ для фиксирования события передачи материальных ценностей, изменения конфигурации
-    оборудования;</li>
-    <li> Доверенность на внос-вынос (для лиц, отсутствующих в Формуляре клиента) ─ для передачи
-    материальных ценностей на эксплуатацию в ЦОД или вынос из ЦОД, включая изменение конфигурации
-    оборудования;</li>
-    <li> Доверенность на проведение работ (для лиц, отсутствующих в Формуляре клиента).</li>
+<h2>Порядок оформления разовых пропусков:</h2>
+<p><ol><li>При отсутствии сотрудника компании в списках постоянного доступа, заявки на допуск в ЦОД г. Косшы оформляются посредством официального письма.</li>
+    <li>Прием заявок подтверждается дежурной службой ЦОД г. Косшы в виде ответа на электронную почту Заказчика.</li>
+    <li>Разовые заявки на проход должны быть поданы в дежурную службу г. Косшы не позднее, чем за 10 минут до приезда Заказчика либо его представителя.</li>
+    <li>Проход в ЦОД осуществляется только по предварительным заявкам от уполномоченных сотрудников компании, а также согласно утвержденным спискам постоянного доступа.</li>
     </ol>
 </p>
 <ul class="listarrow">
@@ -122,8 +123,12 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Основные ограничения на территории ЦОД:</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <h2 class="section-title wow fadeInDown">Порядок прохода Заказчиков и посетителей на территорию ЦОД:</h2>
+                <p class="wow fadeInDown"><ul>
+                    <li>На территорию ЦОД допускаются только посетители, имеющие при себе документы, удостоверяющие личность: гражданский паспорт, загранпаспорт, военный билет, водительское удостоверение.</li>
+                    <li>При работе с электрооборудованием сотрудник обязан иметь группу по электробезопасности не  ниже третьей, согласно правилам по охране труда при эксплуатации электроустановок. Данная группа подтверждается наличием соответствующего действующего удостоверения.</li>
+                    <li>Вход в модуль без бахил, с продуктами питания, в алкогольном и наркотическом опьянении категорически запрещен. В случае нарушения правил доступа менеджер ЦОД оставляет за собой право ограничения доступа уполномоченного сотрудника в помещения ЦОД.</li>
+                </ul></p>
             </div>
 
             <div class="row">
@@ -161,10 +166,8 @@
                                 <i class="fa fa-database"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">надо еще что-то добавить</h4>
-                                <p>Во все помещения, кроме серверного
-                                    зала, разрешается проносить и употреблять прохладительные напитки в
-                                    закрывающейся таре.</p>
+                                <h4 class="media-heading">Соблюдение чистоты</h4>
+                                <p>Вход в гермозону и операторскую без бахил категорически запрещен.</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -216,8 +219,12 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">About Us</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <h2 class="section-title wow fadeInDown">Порядок вноса оборудования (и других материальных ценностей) в ЦОД</h2>
+                <p class="wow fadeInDown"><ul>
+                    <li>Внос оборудования в ЦОД осуществляется по предварительным заявкам от уполномоченных сотрудников компании. Заявки на внос отправляют только уполномоченные сотрудники компании. </li>
+                    <li>Внос оборудования так же возможен с оформлением Акта приема-передачи оборудования. </li>
+                    <li>Внос оборудования с одновременным оформлением Акта приема-передачи возможен только в рабочие дни с 9-00 до 18-30 с перерывом на обед с 13-00 до 14-30.</li>
+                </ul></p>
             </div>
 
             <div class="row">
@@ -226,13 +233,11 @@
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Our Company</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-
-                    <p>Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. </p>
-
-					<p>Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
-
+                    <h3 class="column-title">Порядок выноса оборудования из ЦОД</h3>
+                    <p><ul>
+                        <li>Вынос оборудования из ЦОД осуществляется по предварительным заявкам.</li>
+                        <li>Вынос оборудования, оформленного по актам, осуществляется исключительно при наличии предварительно оформленного Акта приема-передачи оборудования в рабочие дни с 9-00 до 18-30 с перерывом на обед с 13-00 до 14-30 в рабочие дни.</li>
+                    </ul></p>
 
                     <a class="btn btn-primary" href="#">Learn More</a>
 
@@ -353,11 +358,16 @@
     <section id="pricing">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Pricing</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <h2 class="section-title wow fadeInDown">Оперативное обслуживание оборудования</h2>
+                <p class="wow fadeInDown"><ul>
+                    <li>Проверка состояния оборудования по его индикации на передней или задней панели и перезагрузка оборудования по запросу Заказчика дежурным инженером ЦОД г. Косшы</li>
+                    <li>Заявки на технологические операции отправляются и принимаются исключительно от уполномоченных сотрудников компании</li>
+                    <li>В заявке на перезагрузку оборудования в обязательном порядке указывается Учётный номер оборудования по базе данных, координаты стойки, где размещено оборудования, и способ его перезагрузки (выключение/включение электропитания оборудования или нажатие на кнопку Reset).</li>
+                    <li>В заявке на проверку состояния оборудования в обязательном порядке указывается Учетный номер оборудования, координаты стойки, где размещено оборудование, и параметры индикаторов.</li>
+                </ul></p>
             </div>
 
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
                         <ul class="pricing">
@@ -472,12 +482,18 @@
    
    
 
-    <section id="business-stats">
+    <!--<section id="business-stats">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Business Stats</h2>
                 <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
+
+            
+            
+            
+            </div>
+
 
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -512,7 +528,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Наши сотрудники:</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <!--<p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>-->
             </div>
 			
 			 	
@@ -520,7 +536,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                            <!--<img class="img-responsive" src="images/team/01.jpg" alt="">-->
                         </div>
                         <div class="team-info">
                             <h3>Кеңесбек Жасулан</h3>
@@ -537,7 +553,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                            <!--<img class="img-responsive" src="images/team/02.jpg" alt="">-->
                         </div>
                         <div class="team-info">
                             <h3>Сален Арман</h3>
@@ -554,7 +570,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                            <!--<img class="img-responsive" src="images/team/03.jpg" alt="">-->
                         </div>
                         <div class="team-info">
                             <h3>Альбрандт Андрей</h3>
@@ -571,7 +587,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                            <!--<img class="img-responsive" src="images/team/04.jpg" alt="">-->
                         </div>
                         <div class="team-info">
                             <h3>Жүсіпбеков Бақытжан</h3>
@@ -590,7 +606,7 @@
         </div>
     </section><!--/#our-team-->
 
-    <section class="testimonial-area" id="testimonial">
+    <!--<section class="testimonial-area" id="testimonial">
 			<div class="container">
 				<div class="section-header">
                 <h2 class="section-title wow fadeInDown">Testimonial</h2>
@@ -653,14 +669,15 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
     <section id="contact-us">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Связаться с нами</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <p class="wow fadeInDown">Мы всегда рады помочь Вам и ответить на все Ваши вопросы.</p>
             </div>
         </div>
+        <div id="map" style="height: 380px; width: 92%; margin:0 auto"></div>
     </section><!--/#contact-us-->
 
 
@@ -675,9 +692,9 @@
 
                             <address>
                               <strong>TOO "QazCloud"</strong><br>
-                              г.Косшы, ул. Республики, стр.3<br>
+                              г. Косшы, ул. Республики, стр.3<br>
                               Казахстан<br>
-                              <abbr title="Phone">Номер:</abbr> (123) 456-7890
+                              <abbr title="Phone">Номер:</abbr> 8-(708)-425-54-92
                             </address>
 					</div></div>
                     <div class="col-sm-8 col-md-8">
@@ -685,18 +702,18 @@
                        
                             <form id="main-contact-form" name="contact-form" method="post" action="#">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    <input type="text" name="name" class="form-control" placeholder="Имя" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    <input type="text" name="subject" class="form-control" placeholder="Тема обращения" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Сообщение" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="submit" class="btn btn-primary">Отправить сообщение</button>
                             </form>
                         </div>
                     </div>
